@@ -44,6 +44,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    projectsLink: 'https://github.com/mantast255',
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Error handling request.'
